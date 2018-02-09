@@ -1,0 +1,15 @@
+{
+  "name": "dr",
+  "version": "1.0.0",
+  "private": true,
+  "description": "tryin some docker",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "rb",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "2.4.1"
+  }
+}
