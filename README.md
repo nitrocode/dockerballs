@@ -8,10 +8,12 @@ The Node.js app starts on port `3000` in the container and is mapped to port `30
 
 In the `scripts/` directory, the following scripts exist:
 
+* `dockerup.sh` - uses `docker-compose.yml` which uses `Dockerfile` to build an image. See `docker-compose.yml.orig` to show how to create a docker container without the `Dockerfile`. 
 * `dockerbuild.sh` - uses `Dockerfile` to build an image
-* `dockerup.sh` - uses `docker-compose.yml` to build an image
 * `dockerdel.sh` - removes images with the name
 * `dockerrun.sh` - runs the docker image in detached mode
+
+The aforementioned scripts should be run in root directory of the repo or the docker files will not be found. See below in the Usage section.
 
 ## Usage
 
