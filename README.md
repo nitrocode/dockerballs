@@ -25,3 +25,7 @@ In the `scripts/` directory, the following scripts exist:
     $ curl localhost:3001
     BALLS
 
+## Linting
+
+    ./node_modules/.bin/dockerlint
+
