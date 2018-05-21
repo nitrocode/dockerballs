@@ -42,4 +42,8 @@ Run this command to find the IP
 
 ## Linting
 
-    ./node_modules/.bin/dockerlint
+    $ npm i
+    $ ./node_modules/.bin/dockerlint
+    
+    INFO: Dockerfile is OK.
+
