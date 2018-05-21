@@ -22,12 +22,24 @@ The aforementioned scripts should be run in root directory of the repo or the do
     $ ./scripts/dockerup.sh
     Recreating docker_node_1 ... done
 
-### Hit
+### Hit on Linux
 
     $ curl localhost:3001
+    BALLS
+
+### Hit on OSX
+
+On OSX, I used the [Docker tutorial](https://pilsniak.com/how-to-install-docker-on-mac-os-using-brew/) by Marcin Pilśniak and learned that you cannot use localhost to hit the app. Instead, docker-machine runs docker containers on a separate IP.
+
+Run this command to find the IP
+
+    $ docker-machine ip default
+    192.168.64.2
+    $ curl localhost:3001
+    curl: (7) Failed to connect to localhost port 3001: Connection refused
+    $ curl 192.168.64.2:3001
     BALLS
 
 ## Linting
 
     ./node_modules/.bin/dockerlint
-
