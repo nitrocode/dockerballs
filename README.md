@@ -12,6 +12,7 @@ In the `scripts/` directory, the following scripts exist:
 * `dockerup.sh` - uses `docker-compose.yml` to build an image
 * `dockerdel.sh` - removes images with the name
 * `dockerrun.sh` - runs the docker image in detached mode
+* `dockershell.sh` - runs the docker image and executes `bash` inside the shell
 
 ## Usage
 
